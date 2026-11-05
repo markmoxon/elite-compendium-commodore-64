@@ -4,3 +4,6 @@
 [submodule "elite-universe-editor-commodore-64"]
 	path = elite-universe-editor-commodore-64
 	url = https://github.com/markmoxon/elite-universe-editor-commodore-64.git
+[submodule "elite-universe-editor-library"]
+	path = elite-universe-editor-library
+	url = https://github.com/markmoxon/elite-universe-editor-library.git
