@@ -2,6 +2,8 @@ print chr$(147) : rem clear screen
 poke 53280,0 : rem black border
 poke 53281,0 : rem black background
 
+poke 53272,23
+
 start%=12
 rows%=3
 o%=0
@@ -31,19 +33,19 @@ y=y+1
 x=14
 next j
 print chr$(158); : rem yellow
-a$="compendium":gosub 8000
+a$="COMPENDIUM":gosub 8000
 print chr$(30); : rem green
 print
-print "   elite by ian bell and david braben"
-print "       enhancements by mark moxon"
+print "   Elite by Ian Bell and David Braben"
+print "       Enhancements by Mark Moxon"
 return
 
 2000 rem display menu options with highlight
 
 x=0:y=8
 print chr$(158); : rem yellow
-a$=" crsr up/down to select, space for info ":gosub 8000
-a$="          press return to play          ":gosub 8000
+a$=" CRSR up/down to select, SPACE for info ":gosub 8000
+a$="             RETURN to play             ":gosub 8000
 a$=b$:gosub 8000
 a$=b$:gosub 8000
 
@@ -51,22 +53,22 @@ if o%=0 then print chr$(28):a1$=h1$:a2$=h2$ : rem highlight in red
 if o%=1 then print chr$(154):a1$=b$:a2$=b$  : rem no highlight in light blue
 
 a$=a1$:gosub 8000
-a$="       commodore 64 and 128 elite       ":gosub 8000
-a$="   the best version of firebird elite   ":gosub 8000
+a$="       Commodore 64 and 128 Elite       ":gosub 8000
+a$="   The best version of Firebird Elite   ":gosub 8000
 a$=a2$:gosub 8000
 
 if o%=1 then print chr$(28):a1$=h1$:a2$=h2$ : rem highlight in red
 if o%=0 then print chr$(154):a1$=b$:a2$=b$  : rem no highlight in light blue
 
 a$=a1$:gosub 8000
-a$="          elite universe editor         ":gosub 8000
-a$="   create fully playable 3d scenarios   ":gosub 8000
+a$="          Elite Universe Editor         ":gosub 8000
+a$="   Create fully playable 3D scenarios   ":gosub 8000
 a$=a2$:gosub 8000
 
 a$=b$:gosub 8000
 gosub 8000
 print chr$(30); : rem green
-a$="      for the commodore 64 and 128      ":gosub 8000
+a$="      For the Commodore 64 and 128      ":gosub 8000
 return
 
 3000 rem process selecting an option
@@ -89,33 +91,33 @@ goto 3020
 
 x=0:y=8
 print chr$(158); : rem yellow
-a$="  press space for menu, return to play  ":gosub 8000
+a$="     SPACE for menu, RETURN to play     ":gosub 8000
 a$=b$:gosub 8000
 
 print chr$(28); : rem red
 a$=h1$:gosub 8000
-if o%=0 then a$="       commodore 64 and 128 elite       ":gosub 8000
-if o%=1 then a$="          elite universe editor         ":gosub 8000
+if o%=0 then a$="       Commodore 64 and 128 Elite       ":gosub 8000
+if o%=1 then a$="          Elite Universe Editor         ":gosub 8000
 a$=h2$:gosub 8000
 a$=b$:gosub 8000
 
 print chr$(154); : rem light blue
 
-if o%=0 then a$="  elite with all the bells and whistles ":gosub 8000
+if o%=0 then a$="  Elite with all the bells and whistles ":gosub 8000
 if o%=0 then a$=b$:gosub 8000
-if o%=0 then a$="     flicker-free ships and planets     ":gosub 8000
-if o%=0 then a$="  extended disk menu and better saving  ":gosub 8000
-if o%=0 then a$="      docking computer improvements     ":gosub 8000
-if o%=0 then a$="   much smoother on the commodore 128   ":gosub 8000
-if o%=0 then a$="           bug fixes and more           ":gosub 8000
+if o%=0 then a$="     Flicker-free ships and planets     ":gosub 8000
+if o%=0 then a$="  Extended disk menu and better saving  ":gosub 8000
+if o%=0 then a$="      Docking computer improvements     ":gosub 8000
+if o%=0 then a$="   Much smoother on the commodore 128   ":gosub 8000
+if o%=0 then a$="           Bug fixes and more           ":gosub 8000
 
-if o%=1 then a$="  create your own 3d scenarios in elite ":gosub 8000
+if o%=1 then a$="  Create your own 3D scenarios in Elite ":gosub 8000
 if o%=1 then a$=" and "+chr$(34)+"press play"+chr$(34)+" to bring them to life ":gosub 8000
 if o%=1 then a$=b$:gosub 8000
-if o%=1 then a$="  comes with lots of example universes  ":gosub 8000
-if o%=1 then a$="   including the iconic ship id chart   ":gosub 8000
+if o%=1 then a$="  Comes with lots of example universes  ":gosub 8000
+if o%=1 then a$="   including the iconic ship ID chart   ":gosub 8000
 if o%=1 then a$=b$:gosub 8000
-if o%=1 then a$=" see bbcelite.com/hacks for instructions":gosub 8000
+if o%=1 then a$=" See bbcelite.com/hacks for instructions":gosub 8000
 
 4500 get k$:if k$="" then goto 4500
 k=asc(k$)
