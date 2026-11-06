@@ -1,18 +1,17 @@
 BEEBASM?=beebasm
-PYTHON?=python
 C1541?=c1541
 PETCAT?=petcat
 
 .PHONY:all
 all:
-	@$(PETCAT) -w2 -o 3-assembled-output/boot.prg -- 1-source-files/menu-files/boot.bas
+	$(BEEBASM) -i 1-source-files/main-sources/elite-readme.asm -v > 3-assembled-output/compile.txt
 	@$(PETCAT) -w2 -o 3-assembled-output/menu.prg -- 1-source-files/menu-files/menu.bas
 	@$(C1541) \
 		-format "elite compendium,1" \
 				d64 \
 				4-compiled-game-disks/elite-compendium-commodore-64-ntsc.d64 \
 		-attach 4-compiled-game-disks/elite-compendium-commodore-64-ntsc.d64 \
-		-write 3-assembled-output/boot.prg boot \
+		-write 3-assembled-output/menu.prg menu \
 		-write elite-universe-editor-commodore-64/work/ntsc/firebird universe \
 		-write elite-universe-editor-commodore-64/work/ntsc/gma1.modified gma1 \
 		-write elite-universe-editor-commodore-64/work/ntsc/gma3 gma3 \
@@ -34,14 +33,13 @@ all:
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.max.bin "max" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
-		-write 3-assembled-output/menu.prg menu \
 		-write 3-assembled-output/readme.txt "readme,s"
 	@$(C1541) \
 		-format "elite compendium,1" \
 				d64 \
 				4-compiled-game-disks/elite-compendium-commodore-64-pal.d64 \
 		-attach 4-compiled-game-disks/elite-compendium-commodore-64-pal.d64 \
-		-write 3-assembled-output/boot.prg boot \
+		-write 3-assembled-output/menu.prg menu \
 		-write elite-universe-editor-commodore-64/work/pal/firebird universe \
 		-write elite-universe-editor-commodore-64/work/pal/byebyejulie byebyejulie \
 		-write elite-universe-editor-commodore-64/work/pal/gma1.modified gma1 \
@@ -64,5 +62,4 @@ all:
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.max.bin "max" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
-		-write 3-assembled-output/menu.prg menu \
 		-write 3-assembled-output/readme.txt "readme,s"

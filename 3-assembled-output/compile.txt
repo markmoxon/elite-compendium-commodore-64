@@ -1,0 +1,63 @@
+.readme
+     0000   0D
+     0001   2D 2D 2D ...
+     0028   0D
+Macro CAP:
+     0029   C6
+End macro CAP
+     002A   49 52 45 ...
+Macro CAP:
+     0032   C5
+End macro CAP
+     0033   4C 49 54 ...
+Macro CAP:
+     0039   C3
+End macro CAP
+     003A   4F 4D 50 ...
+Macro CAP:
+     0044   D6
+End macro CAP
+     0045   45 52 53 ...
+     004C   0D
+     004D   0D
+Macro CAP:
+     004E   C6
+End macro CAP
+     004F   4F 52 20 ...
+Macro CAP:
+     0056   C3
+End macro CAP
+     0057   4F 4D 4D ...
+     006A   0D
+     006B   0D
+Macro CAP:
+     006C   C3
+End macro CAP
+     006D   4F 4E 54 ...
+     008E   0D
+     008F   4C 4F 54 ...
+Macro CAP:
+     00A6   CD
+End macro CAP
+     00A7   41 52 4B ...
+Macro CAP:
+     00AB   CD
+End macro CAP
+     00AC   4F 58 4F ...
+     00B0   0D
+     00B1   0D
+Macro CAP:
+     00B2   D3
+End macro CAP
+     00B3   45 45 20 ...
+     00D2   0D
+     00D3   0D
+Macro CAP:
+     00D4   C2
+End macro CAP
+     00D5   75 69 6C ...
+     00DB   32 30 32 ...
+     00EE   0D
+     00EF   2D 2D 2D ...
+     0116   0D
+Saving file '3-assembled-output/README.txt'
