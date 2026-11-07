@@ -53,7 +53,24 @@ ENDMACRO
  CAP 'F'
  EQUS "OR THE "
  CAP 'C'
- EQUS "OMMODORE 64 AND 128"
+ EQUS "OMMODORE 64 AND 128 ("
+
+IF NTSC=1
+
+ CAP 'N'
+ CAP 'T'
+ CAP 'S'
+ CAP 'C'
+
+ELSE
+
+ CAP 'P'
+ CAP 'A'
+ CAP 'L'
+
+ENDIF
+
+ EQUS ")"
  EQUB 13
  EQUB 13
 
@@ -78,4 +95,12 @@ ENDMACRO
  EQUS "---------------------------------------"
  EQUB 13
 
- SAVE "3-assembled-output/README.txt", readme, P%
+IF NTSC=1
+
+ SAVE "3-assembled-output/README-ntsc.txt", readme, P%
+
+ELSE
+
+ SAVE "3-assembled-output/README-pal.txt", readme, P%
+
+ENDIF

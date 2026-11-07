@@ -82,36 +82,122 @@ Macro CAP:
      0056   C3
 End macro CAP
      0057   4F 4D 4D ...
-     006A   0D
-     006B   0D
 Macro CAP:
-     006C   C3
+     006C   D0
 End macro CAP
-     006D   4F 4E 54 ...
-     008E   0D
-     008F   4C 4F 54 ...
 Macro CAP:
-     00A6   CD
+     006D   C1
 End macro CAP
-     00A7   41 52 4B ...
 Macro CAP:
-     00AB   CD
+     006E   CC
 End macro CAP
-     00AC   4F 58 4F ...
-     00B0   0D
-     00B1   0D
+     006F   29 
+     0070   0D
+     0071   0D
 Macro CAP:
-     00B2   D3
+     0072   C3
 End macro CAP
-     00B3   45 45 20 ...
-     00D2   0D
-     00D3   0D
+     0073   4F 4E 54 ...
+     0094   0D
+     0095   4C 4F 54 ...
 Macro CAP:
-     00D4   C2
+     00AC   CD
 End macro CAP
-     00D5   55 49 4C ...
-     00DB   32 30 32 ...
-     00EE   0D
-     00EF   2D 2D 2D ...
-     0116   0D
-Saving file '3-assembled-output/README.txt'
+     00AD   41 52 4B ...
+Macro CAP:
+     00B1   CD
+End macro CAP
+     00B2   4F 58 4F ...
+     00B6   0D
+     00B7   0D
+Macro CAP:
+     00B8   D3
+End macro CAP
+     00B9   45 45 20 ...
+     00D8   0D
+     00D9   0D
+Macro CAP:
+     00DA   C2
+End macro CAP
+     00DB   55 49 4C ...
+     00E1   32 30 32 ...
+     00F4   0D
+     00F5   2D 2D 2D ...
+     011C   0D
+Saving file '3-assembled-output/README-pal.txt'
+.readme
+     0000   0D
+     0001   2D 2D 2D ...
+     0028   0D
+Macro CAP:
+     0029   C6
+End macro CAP
+     002A   49 52 45 ...
+Macro CAP:
+     0032   C5
+End macro CAP
+     0033   4C 49 54 ...
+Macro CAP:
+     0039   C3
+End macro CAP
+     003A   4F 4D 50 ...
+Macro CAP:
+     0044   D6
+End macro CAP
+     0045   45 52 53 ...
+     004C   0D
+     004D   0D
+Macro CAP:
+     004E   C6
+End macro CAP
+     004F   4F 52 20 ...
+Macro CAP:
+     0056   C3
+End macro CAP
+     0057   4F 4D 4D ...
+Macro CAP:
+     006C   CE
+End macro CAP
+Macro CAP:
+     006D   D4
+End macro CAP
+Macro CAP:
+     006E   D3
+End macro CAP
+Macro CAP:
+     006F   C3
+End macro CAP
+     0070   29 
+     0071   0D
+     0072   0D
+Macro CAP:
+     0073   C3
+End macro CAP
+     0074   4F 4E 54 ...
+     0095   0D
+     0096   4C 4F 54 ...
+Macro CAP:
+     00AD   CD
+End macro CAP
+     00AE   41 52 4B ...
+Macro CAP:
+     00B2   CD
+End macro CAP
+     00B3   4F 58 4F ...
+     00B7   0D
+     00B8   0D
+Macro CAP:
+     00B9   D3
+End macro CAP
+     00BA   45 45 20 ...
+     00D9   0D
+     00DA   0D
+Macro CAP:
+     00DB   C2
+End macro CAP
+     00DC   55 49 4C ...
+     00E2   32 30 32 ...
+     00F5   0D
+     00F6   2D 2D 2D ...
+     011D   0D
+Saving file '3-assembled-output/README-ntsc.txt'

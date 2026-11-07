@@ -5,7 +5,8 @@ PETCAT?=petcat
 .PHONY:all
 all:
 	$(BEEBASM) -i 1-source-files/main-sources/elite-firebird.asm -v > 3-assembled-output/compile.txt
-	$(BEEBASM) -i 1-source-files/main-sources/elite-readme.asm -v >> 3-assembled-output/compile.txt
+	$(BEEBASM) -i 1-source-files/main-sources/elite-readme.asm -v -D NTSC=0 >> 3-assembled-output/compile.txt
+	$(BEEBASM) -i 1-source-files/main-sources/elite-readme.asm -v -D NTSC=1 >> 3-assembled-output/compile.txt
 	@$(PETCAT) -w2 -o 3-assembled-output/menu.prg -- 1-source-files/menu-files/menu.bas
 	@$(C1541) \
 		-format "elite compendium,1" \
@@ -34,7 +35,7 @@ all:
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
 		-write 3-assembled-output/menu.prg m \
-		-write 3-assembled-output/readme.txt "readme,s"
+		-write 3-assembled-output/readme-ntsc.txt "readme,s"
 	@$(C1541) \
 		-format "elite compendium,1" \
 				d64 \
@@ -62,4 +63,4 @@ all:
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
 		-write 3-assembled-output/menu.prg m \
-		-write 3-assembled-output/readme.txt "readme,s"
+		-write 3-assembled-output/readme-pal.txt "readme,s"
