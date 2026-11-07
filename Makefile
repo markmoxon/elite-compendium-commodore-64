@@ -42,7 +42,6 @@ all:
 		-attach 4-compiled-game-disks/elite-compendium-commodore-64-pal.d64 \
         -write 3-assembled-output/firebird.bin firebird \
 		-write elite-universe-editor-commodore-64/work/pal/firebird universe \
-		-write elite-universe-editor-commodore-64/work/pal/byebyejulie byebyejulie \
 		-write elite-universe-editor-commodore-64/work/pal/gma1.modified gma1 \
 		-write elite-universe-editor-commodore-64/work/pal/gma3 gma3 \
 		-write elite-universe-editor-commodore-64/work/pal/gma4 gma4 \
