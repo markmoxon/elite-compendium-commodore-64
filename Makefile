@@ -29,7 +29,6 @@ all:
 		-write elite-universe-editor-library/universe-files/u.boxartc.bin "boxartc" \
 		-write elite-universe-editor-library/universe-files/u.manual.bin "manual" \
 		-write elite-universe-editor-library/universe-files/u.shipid.bin "shipid" \
-		-write elite-source-code-commodore-64/1-source-files/other-files/e.fight.bin "fight" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.max.bin "max" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
@@ -58,7 +57,6 @@ all:
 		-write elite-universe-editor-library/universe-files/u.boxartc.bin "boxartc" \
 		-write elite-universe-editor-library/universe-files/u.manual.bin "manual" \
 		-write elite-universe-editor-library/universe-files/u.shipid.bin "shipid" \
-		-write elite-source-code-commodore-64/1-source-files/other-files/e.fight.bin "fight" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.max.bin "max" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss1.bin "miss1" \
 		-write elite-source-code-commodore-64/1-source-files/other-files/e.miss2.bin "miss2" \
