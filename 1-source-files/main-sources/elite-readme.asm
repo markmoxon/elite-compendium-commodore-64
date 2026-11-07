@@ -73,7 +73,7 @@ ENDMACRO
  EQUB 13
  EQUB 13
  CAP 'B'
- EQUS "uild: ", TIME$("%F %T")
+ EQUS "UILD: ", TIME$("%F %T")
  EQUB 13
  EQUS "---------------------------------------"
  EQUB 13
