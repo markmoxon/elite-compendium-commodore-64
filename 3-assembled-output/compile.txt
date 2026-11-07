@@ -1,3 +1,57 @@
+     02A5   A7 02
+.basicBootstrap
+     02A7   0B 08
+     02A9   01 00
+     02AB   9E
+     02AC   32 30 36 ...
+     02B0   00
+     02B1   00 00
+.RelocateLoader
+     02B3   A2 5B      LDX #&5B
+.relo1
+     02B5   BD 01 08   LDA &0801,X
+     02B8   9D A7 02   STA &02A7,X
+     02BB   CA         DEX
+     02BC   10 F7      BPL &02B5
+     02BE   4C CB 02   JMP &02CB
+.filename
+     02C1   93
+     02C2   4C 6F 
+     02C4   22
+     02C5   4D 
+     02C6   22
+     02C7   2C 38 
+     02C9   13
+     02CA   00
+.RunGMA
+     02CB   A9 83      LDA #&83
+     02CD   8D 02 03   STA &0302
+     02D0   A9 A4      LDA #&A4
+     02D2   8D 03 03   STA &0303
+     02D5   A0 00      LDY #&00
+.comm1
+     02D7   B9 C1 02   LDA &02C1,Y
+     02DA   F0 06      BEQ &02E2
+     02DC   20 D2 FF   JSR &FFD2
+     02DF   C8         INY
+     02E0   D0 F5      BNE &02D7
+.comm2
+     02E2   A9 0D      LDA #&0D
+     02E4   8D 77 02   STA &0277
+     02E7   8D 7B 02   STA &027B
+     02EA   A9 52      LDA #&52
+     02EC   8D 78 02   STA &0278
+     02EF   A9 55      LDA #&55
+     02F1   8D 79 02   STA &0279
+     02F4   A9 4E      LDA #&4E
+     02F6   8D 7A 02   STA &027A
+     02F9   A9 05      LDA #&05
+     02FB   85 C6      STA &C6
+     02FD   6C 02 03   JMP (&0302)
+.basicVectors
+     0300   8B E3
+     0302   CB 02
+Saving file '3-assembled-output/firebird.bin'
 .readme
      0000   0D
      0001   2D 2D 2D ...

@@ -1,1 +1,1 @@
----------------------------------------ÆIREBIRD ÅLITE (ÃOMPENDIUM ÖERSION)ÆOR THE ÃOMMODORE 64 AND 128ÃONTAINS FLICKER-FREE ROUTINES ANDLOTS OF OTHER HACKS BY ÍARK ÍOXONÓEE WWW.BBCELITE.COM FOR DETAILSÂuild: 2026-11-07 14:21:35---------------------------------------
+---------------------------------------ÆIREBIRD ÅLITE (ÃOMPENDIUM ÖERSION)ÆOR THE ÃOMMODORE 64 AND 128ÃONTAINS FLICKER-FREE ROUTINES ANDLOTS OF OTHER HACKS BY ÍARK ÍOXONÓEE WWW.BBCELITE.COM FOR DETAILSÂuild: 2026-11-07 15:24:52---------------------------------------
