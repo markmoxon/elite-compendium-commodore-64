@@ -1,4 +1,4 @@
-# Elite Compendium for the BBC Master 128
+# Elite Compendium for the Commodore 64
 
 <details>
 <summary>Links to my other software archaeology repositories</summary>
@@ -8,7 +8,7 @@
 
 **Elite hacks:** [Elite-A](https://github.com/markmoxon/elite-a-source-code-bbc-micro) | [Two-player Elite](https://github.com/markmoxon/elite-two-player-6502-second-processor) | [Teletext Elite](https://github.com/markmoxon/teletext-elite) | [Elite 3D](https://github.com/markmoxon/elite-3d) | [Elite Universe Editor](https://github.com/markmoxon/elite-universe-editor) | [Flicker-free Commodore 64 Elite](https://github.com/markmoxon/c64-elite-flicker-free) | [Elite over Econet](https://github.com/markmoxon/elite-over-econet) | [!EliteNet](https://github.com/markmoxon/elite-over-econet-acorn-archimedes)
 
-**Elite Compendium:** [BBC Master](https://github.com/markmoxon/elite-compendium-bbc-master) | [BBC Micro](https://github.com/markmoxon/elite-compendium-bbc-micro) | [BBC Micro B+](https://github.com/markmoxon/elite-compendium-bbc-micro-b-plus) | [Acorn Electron](https://github.com/markmoxon/elite-compendium-acorn-electron)
+**Elite Compendium:** [BBC Master](https://github.com/markmoxon/elite-compendium-bbc-master) | [BBC Micro](https://github.com/markmoxon/elite-compendium-bbc-micro) | [BBC Micro B+](https://github.com/markmoxon/elite-compendium-bbc-micro-b-plus) | [Acorn Electron](https://github.com/markmoxon/elite-compendium-acorn-electron) | [Commodore 64](https://github.com/markmoxon/elite-compendium-commodore-64)
 
 **Other sources:** [Aviator (BBC Micro)](https://github.com/markmoxon/aviator-source-code-bbc-micro) | [Revs (BBC Micro)](https://github.com/markmoxon/revs-source-code-bbc-micro) | [The Sentinel (BBC Micro)](https://github.com/markmoxon/the-sentinel-source-code-bbc-micro) | [Lander (Acorn Archimedes)](https://github.com/markmoxon/lander-source-code-acorn-archimedes)
 
@@ -18,53 +18,34 @@ See [my profile](https://github.com/markmoxon) for more repositories to explore.
 <hr>
 </details>
 
-![Screenshot of the Elite Compendium menu screen](https://elite.bbcelite.com/images/elite_compendium/menu.png)
+![Screenshot of the Elite Compendium menu screen](https://elite.bbcelite.com/images/elite_compendium/menu_commodore_64.png)
 
-This repository contains source code for the Elite Compendium for the BBC Master 128.
+This repository contains source code for the Elite Compendium for the Commodore 64.
 
-The Elite Compendium is a collection of the very best of Acornsoft Elite, updated with as many hacks and enhancements as I've been able to fit in. If you're looking to play 8-bit Elite, then this is a pretty good place to start. For more information, see the [bbcelite.com website](https://elite.bbcelite.com/hacks/elite_compendium/).
+The Elite Compendium is a collection of the very best of Acornsoft and Firebird Elite, updated with as many hacks and enhancements as I've been able to fit in. If you're looking to play 8-bit Elite, then this is a pretty good place to start. For more information, see the [bbcelite.com website](https://elite.bbcelite.com/hacks/elite_compendium/).
 
-This repository contains submodules for each of the individual programs on the disc. Each submodule points to a branch that contains the version of that program to be included in the Compendium disc.
+This repository contains submodules for each of the individual programs on the disk. Each submodule points to a branch that contains the version of that program to be included in the Compendium disk.
 
-The repository also contains the menu code and a build process for producing a DSD disc image, as well as two SSD images for use with SD cards. The SSD images are produced by BeebAsm, and the DSD image is created using the [oaknut-disc Python tool](https://rob-smallshire.github.io/oaknut/disc/index.html), which can be installed using `pip install oaknut-disc` (pipx, uv and uvx are also supported).
+The repository also contains the menu code and a build process for producing two D64 disk images, one for PAL and one for NTSC.
 
 See the individual subprojects for more information.
 
-* [BBC Micro disc Elite, elite-compendium-bbc-master branch](https://github.com/markmoxon/elite-source-code-bbc-micro-disc/tree/elite-compendium-bbc-master)
-* [6502 Second Processor Elite, elite-compendium branch](https://github.com/markmoxon/elite-source-code-6502-second-processor/tree/elite-compendium)
-* [BBC Master Elite, elite-compendium branch](https://github.com/markmoxon/elite-source-code-bbc-master/tree/elite-compendium)
-* [Teletext Elite, elite-compendium-bbc-master branch](https://github.com/markmoxon/teletext-elite/tree/elite-compendium-bbc-master)
+* [Commodore 64 Elite, elite-compendium branch](https://github.com/markmoxon/elite-source-code-commodore-64/tree/elite-compendium)
 * [Elite Universe Editor](https://github.com/markmoxon/elite-universe-editor)
 
 ## Acknowledgements
 
-BBC Micro Elite was written by Ian Bell and David Braben and is copyright &copy; Acornsoft 1984.
+Commodore 64 Elite was written by Ian Bell and David Braben and is copyright &copy; D. Braben and I. Bell 1985.
 
-The code on this site has been reconstructed from a disassembly of the version released on [Ian Bell's personal website](http://www.elitehomepage.org/).
+The code on this site is identical to the source disks released on [Ian Bell's personal website](http://www.elitehomepage.org/) (it's just been reformatted to be more readable).
 
-6502 Second Processor Elite was written by Ian Bell and David Braben and is copyright &copy; Acornsoft 1985.
+The commentary is copyright &copy; Mark Moxon. Any misunderstandings or mistakes in the documentation are entirely my fault.
 
-The 6502 Second Processor code on this site is identical to the source discs released on [Ian Bell's personal website](http://www.elitehomepage.org/) (it's just been reformatted to be more readable).
+Huge thanks are due to the original authors for not only creating such an important piece of my childhood, but also for releasing the source code for us to play with. Also, a big thumbs up to Kroc Camen for his epic [Elite Harmless](https://github.com/Kroc/elite-harmless) project, which is a really useful reference for anyone exploring the Commodore 64 binaries. Finally, thanks to the gurus in this [Lemon64 forum thread](https://www.lemon64.com/forum/viewtopic.php?t=67762&start=90) for their sage advice.
 
-BBC Master Elite was written by Ian Bell and David Braben and is copyright &copy; Acornsoft 1986.
+The following archive from Ian Bell's personal website forms the basis for this project:
 
-The BBC Master code on this site has been reconstructed from a disassembly of the version released on [Ian Bell's personal website](http://www.elitehomepage.org/).
-
-The commentary, Teletext conversion code and Universe Editor code are copyright &copy; Mark Moxon. Any misunderstandings or mistakes in the documentation are entirely my fault.
-
-The Teletext routines are by Kieran Connell and Simon Morris of the Bitshifters, and were adapted from Bresenham routines by Rich Talbot-Watkins. See the [Bitshifters teletextr](https://github.com/bitshifters/teletextr/tree/master/lib) repository for the original code.
-
-Huge thanks are due to the original authors for not only creating such an important piece of my childhood, but also for releasing the source code for us to play with; to Paul Brink for his annotated disassembly; and to Kieran Connell for his [BeebAsm version](https://github.com/kieranhj/elite-beebasm), which I forked as the original basis for this project. You can find more information about this project in the [accompanying website's project page](https://elite.bbcelite.com/about_site/about_this_project.html).
-
-Thanks to the Bitshifters for their help in building the [musical version of BBC Micro Elite](#bbc-micro-elite-with-music), and in particular Kieran Connell, Simon Morris and Negative Charge for the music player and ported music files.
-
-The following archives from Ian Bell's personal website form the basis for this project:
-
-* [BBC Elite, disc version](http://www.elitehomepage.org/archive/a/a4100000.zip)
-
-* [6502 Second Processor sources as a disc image](http://www.elitehomepage.org/archive/a/a5022201.zip)
-
-* [BBC Elite, Master version](http://www.elitehomepage.org/archive/a/b8020001.zip)
+* [Commodore 64 Elite sources as a BBC Micro disc image](http://www.elitehomepage.org/archive/a/a5050010.zip)
 
 ### A note on licences, copyright etc.
 
