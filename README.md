@@ -1,4 +1,4 @@
-# Elite Compendium for the Commodore 64
+# Elite Compendium for the Commodore 64 and 128
 
 <details>
 <summary>Links to my other software archaeology repositories</summary>
@@ -20,7 +20,7 @@ See [my profile](https://github.com/markmoxon) for more repositories to explore.
 
 ![Screenshot of the Elite Compendium menu screen](https://elite.bbcelite.com/images/elite_compendium/menu_commodore_64.png)
 
-This repository contains source code for the Elite Compendium for the Commodore 64.
+This repository contains source code for the Elite Compendium for the Commodore 64 and 128.
 
 The Elite Compendium is a collection of the very best of 6502 Elite, updated with as many hacks and enhancements as I've been able to fit in. If you're looking to play 8-bit Elite, then this is a pretty good place to start. For more information, see the [bbcelite.com website](https://elite.bbcelite.com/hacks/elite_compendium/).
 
